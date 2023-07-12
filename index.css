@@ -1,0 +1,74 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 300px;
+  margin: 20px auto;
+ }
+
+:root {
+  --orange: orange;
+  --winning-blocks: #2d414b;
+}
+
+body {
+  color: orange;
+  font-family: Franklin Gothic Medium;
+  background-color: var(--winning-blocks);
+}
+
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  cursor: pointer;
+  color: orange;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 54px;
+  
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: orange;
+  border: 25px;
+  border-radius: 10px;
+  color: whitesmoke;
+  border-color: orange;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: navy;
+}
+h1 {
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+}
+
